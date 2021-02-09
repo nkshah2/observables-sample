@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMSPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAr-fz-gmk">
+                                <rect key="frame" x="32" y="76" width="350" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7CM-5X-WCZ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-bs-Vv9">
+                                <rect key="frame" x="157" y="308" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.21176470589999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vns-6a-5sF"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="redClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rlo-2H-Bjr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lw-bE-tF4">
+                                <rect key="frame" x="157" y="370" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ohe-CI-jqn"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOP-Bu-dyM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-0h-IL4">
+                                <rect key="frame" x="157" y="432" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.43137254899999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ti1-tU-LA2"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iB-I8-x7H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0kE-0h-IL4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8D-pe-wxL"/>
+                            <constraint firstItem="0kE-0h-IL4" firstAttribute="top" secondItem="9lw-bE-tF4" secondAttribute="bottom" constant="32" id="O3e-ZX-7v3"/>
+                            <constraint firstItem="XAr-fz-gmk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="QFI-tJ-64e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XAr-fz-gmk" secondAttribute="trailing" constant="32" id="QQO-qs-rTW"/>
+                            <constraint firstItem="9lw-bE-tF4" firstAttribute="top" secondItem="g6x-bs-Vv9" secondAttribute="bottom" constant="32" id="Uo8-Hh-5xI"/>
+                            <constraint firstItem="XAr-fz-gmk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="c3r-BK-qC5"/>
+                            <constraint firstItem="g6x-bs-Vv9" firstAttribute="top" secondItem="XAr-fz-gmk" secondAttribute="bottom" constant="32" id="cI9-sL-q32"/>
+                            <constraint firstItem="9lw-bE-tF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e4X-ih-3X3"/>
+                            <constraint firstItem="g6x-bs-Vv9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kFr-yA-Bfs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coloredView" destination="XAr-fz-gmk" id="K0I-fQ-jag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
